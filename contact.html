@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Static CI/CD Project</title>
+  <meta name="description" content="Get in touch about the AWS S3 CI/CD project. Questions about the architecture, collaboration inquiries, or just say hello.">
+  <meta property="og:title" content="Contact — Static CI/CD Project">
+  <meta property="og:description" content="Reach out for collaboration, questions about the CI/CD architecture, or just to say hello.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <!-- Film Grain Overlay -->
+  <div class="noise"></div>
+
+  <!-- Loading Bar -->
+  <div class="loading-bar"></div>
+
+  <!-- Custom Cursor -->
+
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">CI</span>
+        StaticDeploy
+      </a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="blog.html" class="nav__link">Blog</a>
+        <a href="contact.html" class="nav__link nav__link--active">Contact</a>
+        <a href="contact.html" class="btn btn--primary btn--nav">Get in Touch</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="about.html" class="mobile-menu__link">About</a>
+    <a href="blog.html" class="mobile-menu__link">Blog</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- HERO — Contact Header                                 -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section class="hero hero--half section--bg">
+    <div class="dot-grid"></div>
+    <div class="container">
+      <div class="hero__content" style="align-items: center; text-align: center; max-width: 640px; margin: 0 auto;">
+        <span class="label fade-up">Contact</span>
+        <h1 class="hero-h1 fade-up" style="font-size: clamp(42px, 6vw, 72px);">Get in Touch</h1>
+
+        <!-- SVG Animated "Say Hello —" text -->
+        <div class="fade-up" style="animation-delay: 300ms; margin-top: 16px;">
+          <svg viewBox="0 0 480 60" width="100%" style="max-width: 480px;" fill="none">
+            <text x="50%" y="45" text-anchor="middle"
+                  font-family="'Playfair Display', serif"
+                  font-size="42"
+                  font-weight="700"
+                  font-style="italic"
+                  stroke="#C9F14B"
+                  stroke-width="1"
+                  fill="none"
+                  class="svg-draw">
+              Say Hello —
+            </text>
+          </svg>
+        </div>
+
+        <p class="body-text text-muted fade-up" style="max-width: 420px; margin-top: 16px;">
+          Have questions about the architecture? Want to collaborate? Or just want to chat about cloud engineering? Drop a message below.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- CONTACT FORM                                           -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section class="section section--surface">
+    <div class="container">
+      <div class="contact-form-card reveal">
+        <!-- The Form -->
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required>
+            <p class="form-error" id="name-error">This field is required</p>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required>
+            <p class="form-error" id="email-error">This field is required</p>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-input" rows="5" placeholder="Tell me about your project or question..." required></textarea>
+            <p class="form-error" id="message-error">This field is required</p>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">Send Message →</button>
+        </form>
+
+        <!-- Success State -->
+        <div class="form-success">
+          <div class="form-success__icon">
+            <svg viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="30" stroke="#C9F14B" stroke-width="1.5"/>
+              <polyline points="20,34 28,42 44,24" stroke="#C9F14B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
+          <p class="form-success__text">Message sent!</p>
+          <p class="body-small text-muted">Thanks for reaching out. I'll get back to you soon.</p>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════════ -->
+      <!-- INFO ROW                                           -->
+      <!-- ═══════════════════════════════════════════════════ -->
+      <div class="info-row reveal" data-delay="200">
+        <!-- GitHub -->
+        <div class="info-item">
+          <span class="info-item__icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 016.02 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </span>
+          <span class="info-item__text">github.com/project</span>
+        </div>
+
+        <!-- Email -->
+        <div class="info-item">
+          <span class="info-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/>
+            </svg>
+          </span>
+          <span class="info-item__text">hello@staticdeploy.dev</span>
+        </div>
+
+        <!-- Location -->
+        <div class="info-item">
+          <span class="info-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+          </span>
+          <span class="info-item__text">Cloud, Everywhere</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- ALTERNATIVE CTA                                        -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section class="section section--bg">
+    <div class="container">
+      <div class="conclusion reveal">
+        <div class="conclusion__divider"></div>
+        <h2 class="section-h2 mb-md">Prefer to explore first?</h2>
+        <p class="body-text text-muted mb-md" style="max-width: 420px; margin-left: auto; margin-right: auto;">
+          Check out the architecture walkthrough and blog articles before reaching out.
+        </p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="index.html#architecture" class="btn btn--primary">View Architecture</a>
+          <a href="blog.html" class="btn btn--ghost">Read the Blog</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo">
+            <span class="nav__logo-icon">CI</span>
+            StaticDeploy
+          </div>
+          <p class="footer__tagline">Automated static site deployment to AWS S3 via GitHub Actions CI/CD pipeline. This site deploys itself on every push.</p>
+        </div>
+        <div class="footer__nav">
+          <span class="footer__nav-title">Navigation</span>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__badges">
+          <span class="footer__nav-title">Built With</span>
+          <div class="footer__badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            GitHub Actions CI/CD
+          </div>
+          <div class="footer__badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.5 19H9a7 7 0 110-14h.5"/><path d="M22 12a4.5 4.5 0 10-9 0 4.5 4.5 0 009 0z"/></svg>
+            AWS S3 Static Hosting
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2025 Static CI/CD Project — Deployed with GitHub Actions + AWS S3
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP & Lenis -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

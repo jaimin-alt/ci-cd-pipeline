@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Static CI/CD Project</title>
+  <meta name="description" content="Meet the developer behind the AWS S3 CI/CD project. Tools used, project motivation, and technical skills.">
+  <meta property="og:title" content="About — Static CI/CD Project">
+  <meta property="og:description" content="Developer profile, tools used, and the motivation behind automated cloud deployments.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <!-- Film Grain Overlay -->
+  <div class="noise"></div>
+
+  <!-- Loading Bar -->
+  <div class="loading-bar"></div>
+
+  <!-- Custom Cursor -->
+
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">CI</span>
+        StaticDeploy
+      </a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="about.html" class="nav__link nav__link--active">About</a>
+        <a href="blog.html" class="nav__link">Blog</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+        <a href="contact.html" class="btn btn--primary btn--nav">Get in Touch</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="about.html" class="mobile-menu__link">About</a>
+    <a href="blog.html" class="mobile-menu__link">Blog</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- HERO — About the Developer                            -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section class="hero hero--half section--bg">
+    <div class="dot-grid"></div>
+    <div class="container">
+      <div class="about-hero__grid">
+        <!-- Left — Bio -->
+        <div class="hero__content">
+          <span class="label fade-up">About the Developer</span>
+          <h1 class="hero-h1 fade-up" style="font-size: clamp(42px, 6vw, 72px);">Building Cloud<br>Infrastructure.</h1>
+          <p class="body-text text-muted fade-up" style="max-width: 520px;">
+            I'm a cloud engineering enthusiast focused on automation, infrastructure-as-code, and modern DevOps practices. This project showcases a real deployment pipeline — built from scratch, documented in detail, and deployed automatically with every commit.
+          </p>
+          <p class="body-text text-muted fade-up" style="max-width: 520px;">
+            My goal is to demonstrate that CI/CD isn't just for enterprise teams with massive budgets. A solo developer can set up production-grade deployment automation in an afternoon using free-tier tools.
+          </p>
+        </div>
+
+        <!-- Right — Avatar + Info -->
+        <div class="about-info fade-up" style="animation-delay: 300ms;">
+          <div class="about-avatar">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="28" r="16" stroke="#C9F14B" stroke-width="1.5" fill="none"/>
+              <path d="M12 68c0-15.46 12.54-28 28-28s28 12.54 28 28" stroke="#C9F14B" stroke-width="1.5" fill="none"/>
+            </svg>
+          </div>
+          <div class="about-info__name">Cloud Engineer</div>
+          <span class="tag about-info__role" style="margin-top: 8px;">AWS · DevOps · CI/CD</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- TOOLS SECTION                                          -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section class="section section--surface" id="tools">
+    <div class="container">
+      <div class="text-center mb-lg">
+        <span class="label reveal">Tech Stack</span>
+        <h2 class="section-h2 reveal" data-delay="100">Stack Used</h2>
+      </div>
+
+      <div class="tools-row reveal" data-delay="200" style="justify-content: center;">
+        <span class="tag">GitHub</span>
+        <span class="tag">GitHub Actions</span>
+        <span class="tag">AWS S3</span>
+        <span class="tag">AWS IAM</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">YAML</span>
+        <span class="tag">AWS CLI</span>
+        <span class="tag">Git</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- PROJECT MOTIVATION                                     -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section class="section section--bg" id="motivation">
+    <div class="container">
+      <div class="text-center mb-lg">
+        <span class="label reveal">Motivation</span>
+        <h2 class="section-h2 reveal" data-delay="100">Why This Project Exists</h2>
+      </div>
+
+      <div class="alt-blocks">
+        <!-- Block A: The Problem -->
+        <div class="alt-block reveal" data-delay="0">
+          <div class="alt-block__content">
+            <span class="label mb-sm" style="display:block; color: var(--color-error);">The Problem</span>
+            <h3 class="sub-h3 mb-md">Death by Manual Deployment</h3>
+            <p class="body-text text-muted">
+              Before automation, every deployment meant: open an FTP client, navigate to the correct directory, select the right files (hopefully all of them), upload, wait for the transfer, refresh the browser, and pray nothing broke. Miss one file? Overwrite the wrong version? Upload to the wrong folder? It happened constantly.
+            </p>
+            <p class="body-small mt-md">
+              Multiply this process by every change, every bug fix, every content update — and you're spending more time deploying than developing.
+            </p>
+          </div>
+          <div class="alt-block__visual">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+              <!-- Broken deploy illustration -->
+              <circle cx="60" cy="60" r="48" stroke="#E84545" stroke-width="0.5" opacity="0.3"/>
+              <circle cx="60" cy="60" r="32" stroke="#E84545" stroke-width="0.5" opacity="0.4"/>
+              <circle cx="60" cy="60" r="16" stroke="#E84545" stroke-width="0.5" opacity="0.6"/>
+              <!-- X mark -->
+              <line x1="45" y1="45" x2="75" y2="75" stroke="#E84545" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="75" y1="45" x2="45" y2="75" stroke="#E84545" stroke-width="1.5" stroke-linecap="round"/>
+              <!-- Orbiting dots -->
+              <circle cx="60" cy="12" r="3" fill="#E84545" opacity="0.4"/>
+              <circle cx="108" cy="60" r="3" fill="#E84545" opacity="0.3"/>
+              <circle cx="60" cy="108" r="3" fill="#E84545" opacity="0.2"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Block B: The Solution -->
+        <div class="alt-block alt-block--reverse reveal" data-delay="100">
+          <div class="alt-block__content">
+            <span class="label mb-sm" style="display:block; color: var(--color-accent);">The Solution</span>
+            <h3 class="sub-h3 mb-md">CI/CD Automates Everything</h3>
+            <p class="body-text text-muted">
+              With GitHub Actions and AWS S3, the entire deployment pipeline runs automatically. Write code, commit, push — and the pipeline handles the rest. Checkout, authentication, file synchronization, and deployment happen in seconds, triggered by a single git push.
+            </p>
+            <p class="body-small mt-md">
+              No FTP clients. No manual file selection. No deployment checklists. Just push and let the machines work. The workflow is version-controlled, auditable, and reproducible — every deployment is identical.
+            </p>
+          </div>
+          <div class="alt-block__visual">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+              <!-- Success deploy illustration -->
+              <circle cx="60" cy="60" r="48" stroke="#C9F14B" stroke-width="0.5" opacity="0.2"/>
+              <circle cx="60" cy="60" r="32" stroke="#C9F14B" stroke-width="0.5" opacity="0.3"/>
+              <circle cx="60" cy="60" r="16" stroke="#C9F14B" stroke-width="0.5" opacity="0.5"/>
+              <!-- Check mark -->
+              <polyline points="42,62 54,74 78,46" stroke="#C9F14B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <!-- Orbiting dots -->
+              <circle cx="60" cy="12" r="3" fill="#C9F14B" opacity="0.4"/>
+              <circle cx="108" cy="60" r="3" fill="#C9F14B" opacity="0.3"/>
+              <circle cx="12" cy="60" r="3" fill="#C9F14B" opacity="0.2"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SKILLS GRID                                            -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section class="section section--surface" id="skills">
+    <div class="container">
+      <div class="text-center mb-lg">
+        <span class="label reveal">Capabilities</span>
+        <h2 class="section-h2 reveal" data-delay="100">Core Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Skill 1: Cloud Computing -->
+        <div class="skill-cell reveal" data-delay="0">
+          <div class="skill-cell__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17.5 19H9a7 7 0 110-14h.5"/><path d="M22 12a4.5 4.5 0 10-9 0 4.5 4.5 0 009 0z"/>
+            </svg>
+          </div>
+          <div class="skill-cell__label">Cloud Computing</div>
+        </div>
+
+        <!-- Skill 2: Version Control -->
+        <div class="skill-cell reveal" data-delay="100">
+          <div class="skill-cell__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 012 2v7"/><path d="M6 9v12"/>
+            </svg>
+          </div>
+          <div class="skill-cell__label">Version Control</div>
+        </div>
+
+        <!-- Skill 3: Automation -->
+        <div class="skill-cell reveal" data-delay="200">
+          <div class="skill-cell__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/>
+            </svg>
+          </div>
+          <div class="skill-cell__label">Automation</div>
+        </div>
+
+        <!-- Skill 4: Static Architecture -->
+        <div class="skill-cell reveal" data-delay="300">
+          <div class="skill-cell__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 8l3 3-3 3"/><path d="M13 14h4"/>
+            </svg>
+          </div>
+          <div class="skill-cell__label">Static Architecture</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo">
+            <span class="nav__logo-icon">CI</span>
+            StaticDeploy
+          </div>
+          <p class="footer__tagline">Automated static site deployment to AWS S3 via GitHub Actions CI/CD pipeline. This site deploys itself on every push.</p>
+        </div>
+        <div class="footer__nav">
+          <span class="footer__nav-title">Navigation</span>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__badges">
+          <span class="footer__nav-title">Built With</span>
+          <div class="footer__badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            GitHub Actions CI/CD
+          </div>
+          <div class="footer__badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.5 19H9a7 7 0 110-14h.5"/><path d="M22 12a4.5 4.5 0 10-9 0 4.5 4.5 0 009 0z"/></svg>
+            AWS S3 Static Hosting
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2025 Static CI/CD Project — Deployed with GitHub Actions + AWS S3
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP & Lenis -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
