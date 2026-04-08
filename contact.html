@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact DevPulse. Get in touch with us for inquiries, feedback, or collaboration opportunities.">
+  <title>Contact — DevPulse</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { inter: ['Inter', 'sans-serif'] },
+          colors: {
+            dark: { 900: '#030712', 800: '#0f172a', 700: '#1e293b', 600: '#334155' },
+            accent: { DEFAULT: '#6366f1', light: '#a5b4fc', dark: '#4f46e5' }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-inter grid-pattern">
+
+  <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+  <nav id="navbar" class="navbar glass fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <span class="text-xl font-bold gradient-text">DevPulse</span>
+        </a>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-sm font-medium text-gray-300">Home</a>
+          <a href="about.html" class="nav-link text-sm font-medium text-gray-300">About</a>
+          <a href="blog.html" class="nav-link text-sm font-medium text-gray-300">Blog</a>
+          <a href="contact.html" class="nav-link text-sm font-medium text-gray-300">Contact</a>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <button id="hamburger" class="hamburger md:hidden flex flex-col gap-1.5 p-2 cursor-pointer" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-menu md:hidden pb-4">
+        <div class="flex flex-col gap-3 pt-2">
+          <a href="index.html" class="nav-link text-sm font-medium text-gray-300 py-2 px-3 rounded-lg hover:bg-white/5">Home</a>
+          <a href="about.html" class="nav-link text-sm font-medium text-gray-300 py-2 px-3 rounded-lg hover:bg-white/5">About</a>
+          <a href="blog.html" class="nav-link text-sm font-medium text-gray-300 py-2 px-3 rounded-lg hover:bg-white/5">Blog</a>
+          <a href="contact.html" class="nav-link text-sm font-medium text-gray-300 py-2 px-3 rounded-lg hover:bg-white/5">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════ CONTACT SECTION ═══════════════════════════════ -->
+  <section class="min-h-screen relative pt-32 pb-20 overflow-hidden flex flex-col justify-center">
+    <!-- Decorative Elements -->
+    <div class="orb orb-1" style="top: 10%; right: 10%;"></div>
+    <div class="orb orb-2" style="bottom: 10%; left: 10%;"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div class="text-center mb-12 reveal">
+        <span class="text-xs font-semibold tracking-widest uppercase text-indigo-400">Get In Touch</span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-white mt-3 mb-4">Contact <span class="gradient-text">Us</span></h1>
+        <p class="text-gray-400 max-w-xl mx-auto">
+          Have a question, feedback, or want to collaborate? Fill out the form below and we'll get back to you securely.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start max-w-5xl mx-auto">
+        
+        <!-- Contact Information -->
+        <div class="reveal reveal-delay-1">
+          <div class="glass-card rounded-2xl p-8 sm:p-10 h-full flex flex-col justify-between relative overflow-hidden">
+             <div class="absolute top-0 right-0 p-10 opacity-5 pointer-events-none">
+                <svg class="w-48 h-48" fill="currentColor" viewBox="0 0 24 24"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+             </div>
+             
+             <div>
+                <h3 class="text-2xl font-bold text-white mb-6">Contact Information</h3>
+                <p class="text-gray-400 mb-8">Feel free to reach out directly via email or connect on social media. We typically reply within 24-48 hours.</p>
+                
+                <ul class="space-y-6">
+                  <li class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center shrink-0">
+                      <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76"/></svg>
+                    </div>
+                    <div>
+                      <h4 class="text-white font-medium text-sm">Email</h4>
+                      <p class="text-gray-400 text-sm mt-1">hello@devpulse.com</p>
+                    </div>
+                  </li>
+                  
+                  <li class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center shrink-0">
+                      <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    </div>
+                    <div>
+                      <h4 class="text-white font-medium text-sm">Location</h4>
+                      <p class="text-gray-400 text-sm mt-1">Remote, Earth 🌍</p>
+                    </div>
+                  </li>
+                </ul>
+             </div>
+             
+             <div class="mt-12 pt-8 border-t border-white/5">
+                <h4 class="text-sm font-semibold text-white mb-4">Follow Us</h4>
+                <div class="flex gap-3">
+                  <a href="#" class="w-10 h-10 rounded-lg border border-white/10 flex items-center justify-center text-gray-500 hover:text-indigo-400 hover:border-indigo-500/30 transition-all" aria-label="Twitter">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                  </a>
+                  <a href="#" class="w-10 h-10 rounded-lg border border-white/10 flex items-center justify-center text-gray-500 hover:text-indigo-400 hover:border-indigo-500/30 transition-all" aria-label="GitHub">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </a>
+                  <a href="#" class="w-10 h-10 rounded-lg border border-white/10 flex items-center justify-center text-gray-500 hover:text-indigo-400 hover:border-indigo-500/30 transition-all" aria-label="LinkedIn">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  </a>
+                </div>
+             </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="reveal reveal-delay-2">
+          <form id="contact-form" class="glass-card rounded-2xl p-8 sm:p-10" novalidate>
+            <h3 class="text-2xl font-bold text-white mb-6">Send a Message</h3>
+            
+            <div class="mb-5">
+              <label for="name" class="block text-sm font-medium text-gray-400 mb-2">Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" autocomplete="name">
+              <span id="name-error" class="error-message"></span>
+            </div>
+            
+            <div class="mb-5">
+              <label for="email" class="block text-sm font-medium text-gray-400 mb-2">Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" autocomplete="email">
+              <span id="email-error" class="error-message"></span>
+            </div>
+            
+            <div class="mb-6">
+              <label for="message" class="block text-sm font-medium text-gray-400 mb-2">Message</label>
+              <textarea id="message" name="message" rows="5" class="form-input resize-none" placeholder="How can we help you?"></textarea>
+              <span id="message-error" class="error-message"></span>
+            </div>
+            
+            <button type="submit" class="btn-primary w-full justify-center flex items-center gap-2">
+              Send Message
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+            </button>
+            <p class="text-xs text-gray-500 mt-4 text-center">We respect your privacy and will never share your information.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <footer class="footer-glow border-t border-white/5 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <span class="text-xl font-bold gradient-text">DevPulse</span>
+          </div>
+          <p class="text-gray-500 text-sm max-w-sm leading-relaxed">A modern tech blog exploring cloud computing, web development, AI/ML, and the future of software engineering.</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-sm text-gray-500 hover:text-indigo-400 transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-sm text-gray-500 hover:text-indigo-400 transition-colors">About</a></li>
+            <li><a href="blog.html" class="text-sm text-gray-500 hover:text-indigo-400 transition-colors">Blog</a></li>
+            <li><a href="contact.html" class="text-sm text-gray-500 hover:text-indigo-400 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white mb-4">Connect</h4>
+          <div class="flex gap-3">
+            <a href="#" class="w-10 h-10 rounded-lg border border-white/10 flex items-center justify-center text-gray-500 hover:text-indigo-400 hover:border-indigo-500/30 transition-all" aria-label="GitHub">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-lg border border-white/10 flex items-center justify-center text-gray-500 hover:text-indigo-400 hover:border-indigo-500/30 transition-all" aria-label="LinkedIn">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="section-divider mb-6"></div>
+      <p class="text-xs text-gray-600 text-center">&copy; 2026 DevPulse. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
